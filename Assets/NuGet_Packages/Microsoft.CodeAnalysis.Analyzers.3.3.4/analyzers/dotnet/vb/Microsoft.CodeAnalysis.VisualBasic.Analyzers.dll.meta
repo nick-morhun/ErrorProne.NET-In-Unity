@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e6a78afd383364ab88d95146851022a4
+guid: 75aca19679ce54b84a460c6a9183288e
 labels:
 - NuGetForUnity
 - RoslynAnalyzer
@@ -20,25 +20,26 @@ PluginImporter:
       enabled: 0
       settings:
         'Exclude ': 0
-        Exclude Android: 1
+        Exclude Android: 0
         Exclude CloudRendering: 0
         Exclude Editor: 1
         Exclude EmbeddedLinux: 0
         Exclude GameCoreScarlett: 0
         Exclude GameCoreXboxOne: 0
         Exclude Linux64: 1
-        Exclude Lumin: 0
         Exclude OSXUniversal: 1
         Exclude PS4: 0
         Exclude PS5: 0
+        Exclude QNX: 0
         Exclude Stadia: 0
         Exclude Switch: 0
+        Exclude VisionOS: 1
         Exclude WebGL: 0
         Exclude Win: 1
         Exclude Win64: 1
         Exclude WindowsStoreApps: 0
         Exclude XboxOne: 0
-        Exclude iOS: 1
+        Exclude iOS: 0
         Exclude tvOS: 0
   - first:
       Any: 
@@ -50,31 +51,42 @@ PluginImporter:
     second:
       enabled: 0
       settings:
+        CPU: AnyCPU
         DefaultValueInitialized: true
+        OS: AnyOS
   - first:
       Standalone: Linux64
     second:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
   - first:
       Standalone: OSXUniversal
     second:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
   - first:
       Standalone: Win
     second:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
   - first:
       Standalone: Win64
     second:
       enabled: 0
       settings:
-        CPU: None
+        CPU: AnyCPU
+  - first:
+      VisionOS: VisionOS
+    second:
+      enabled: 0
+      settings:
+        AddToEmbeddedBinaries: false
+        CPU: AnyCPU
+        CompileFlags: 
+        FrameworkDependencies: 
   - first:
       Windows Store Apps: WindowsStoreApps
     second:
